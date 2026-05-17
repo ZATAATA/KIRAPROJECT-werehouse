@@ -1,4 +1,5 @@
 import React from 'react';
+import kiraLogo from '../assets/img/KIRA-logo.png';
 
 export default function HomeScreen({ gudangList, onSelect, itemCounts, theme, onToggleTheme }) {
   const now = new Date();
@@ -13,7 +14,7 @@ export default function HomeScreen({ gudangList, onSelect, itemCounts, theme, on
       {/* Header */}
       <div className="home-header">
         <div className="home-brand">
-          <img src="/src/assets/img/KIRA-logo.png" alt="KIRA Logo" style={{ height: '40px', width: 'auto', marginRight: '12px' }} />
+          <img src={kiraLogo} alt="KIRA Logo" style={{ height: '40px', width: 'auto', marginRight: '12px' }} />
           <div className="home-brand-text">
             <div className="name"><span>KIRA</span> PROJECT</div>
             <div className="sub">Manajemen Stok Gudang</div>
